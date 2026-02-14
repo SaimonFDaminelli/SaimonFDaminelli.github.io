@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Saimon Daminelli</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SD<span>.tech</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html" class="active">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content" style="padding-top: 120px;">
+        <section class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Vamos conversar?</h2>
+                    <p>Estou disponível para projetos de consultoria em BI, automação de dados e infraestrutura tecnológica.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="method-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Santa Catarina, Brasil</span>
+                        </div>
+                        <div class="method-item">
+                            <i class="bi bi-envelope"></i>
+                            <span>saimondaminelli@gmail.com</span>
+                        </div>
+                        <div class="method-item">
+                            <i class="bi bi-whatsapp"></i>
+                            <span>+55 (48) 99999-9999</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <form action="#" id="contactForm">
+                        <div class="form-group">
+                            <label>Nome Completo</label>
+                            <input type="text" required placeholder="Ex: João Silva">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>E-mail Corporativo</label>
+                            <input type="email" required placeholder="seu@email.com">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Interesse</label>
+                                <select required>
+                                    <option value="">Selecione...</option>
+                                    <option>Business Intelligence</option>
+                                    <option>Automação Python</option>
+                                    <option>Infraestrutura</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Orçamento</label>
+                                <select>
+                                    <option>Sob consulta</option>
+                                    <option>Até R$ 5k</option>
+                                    <option>Acima de R$ 5k</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mensagem</label>
+                            <textarea rows="4" placeholder="Como posso ajudar seu negócio?"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">
+                            Enviar Mensagem <i class="bi bi-send-fill" style="margin-left: 10px;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
