@@ -1,19 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Efeito de Revelação (Scroll Reveal)
-    const observerOptions = { threshold: 0.15 };
-    
+    // Revelação Suave das Seções
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
             }
         });
-    }, observerOptions);
+    }, { threshold: 0.1 });
 
     document.querySelectorAll('section').forEach(section => {
         observer.observe(section);
     });
 
-    // Partículas leves no background (opcional)
-    console.log("Portfólio de Saimon carregado com sucesso.");
+    // Feedback simples no console
+    console.log("Portfólio Saimon Daminelli v2.0 - Ativo");
 });

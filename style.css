@@ -10,127 +10,104 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+html { scroll-behavior: smooth; }
+
 body {
     font-family: 'Inter', sans-serif;
     background: radial-gradient(circle at top right, #1e293b, #0f172a);
     color: var(--text-main);
     line-height: 1.6;
-    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
 
-/* Navbar Fluida */
+/* Navbar */
 nav {
     position: fixed;
     top: 0; width: 100%;
     padding: 1.2rem 0;
-    background: rgba(15, 23, 42, 0.8);
+    background: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(12px);
     z-index: 1000;
     border-bottom: 1px solid var(--glass-border);
 }
 
 .nav-content { display: flex; justify-content: space-between; align-items: center; }
-
-.logo { font-size: 1.5rem; font-weight: 800; letter-spacing: -1px; }
+.logo { font-size: 1.3rem; font-weight: 800; letter-spacing: -1px; text-transform: uppercase; }
 .logo span { color: var(--primary); }
 
 .nav-links { display: flex; list-style: none; gap: 2rem; }
 .nav-links a { 
     color: var(--text-main); text-decoration: none; font-weight: 500; 
-    transition: 0.3s; opacity: 0.8;
+    transition: 0.3s; opacity: 0.7;
 }
 .nav-links a:hover, .nav-links a.active { opacity: 1; color: var(--primary); }
 
-/* Hero & Sections */
-section { padding: 100px 0; opacity: 0; transform: translateY(30px); transition: 0.8s all ease-out; }
+/* Sections */
+section { padding: 80px 0; opacity: 0; transform: translateY(20px); transition: 0.6s all ease-out; }
 section.visible { opacity: 1; transform: translateY(0); }
 
-h2 { font-size: 2.5rem; margin-bottom: 2.5rem; text-align: center; font-family: 'Roboto Slab', serif; }
+h2 { font-size: 2.2rem; margin-bottom: 2.5rem; font-family: 'Inter', sans-serif; font-weight: 800; }
 
-/* Cards & Glassmorphism */
+/* Cards */
 .glass-card {
     background: var(--card-bg);
     backdrop-filter: blur(10px);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
-    padding: 2.5rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    padding: 2rem;
+    transition: 0.3s;
+}
+.glass-card:hover { border-color: var(--primary); transform: translateY(-5px); }
+
+.icon-box {
+    font-size: 2rem;
+    color: var(--primary);
+    background: rgba(59, 130, 246, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
 }
 
-/* Grid de Projetos e Skills */
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-
-.project-card {
-    position: relative; overflow: hidden; border-radius: 15px; transition: 0.4s;
-}
-.project-card:hover { transform: translateY(-10px); }
-.project-card img { width: 100%; height: 200px; object-fit: cover; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
 
 .skill-tag {
-    background: rgba(59, 130, 246, 0.1);
-    border: 1px solid var(--primary);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    display: inline-block;
-    margin: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px;
 }
 
-/* Formulário */
-form { display: grid; gap: 1.5rem; }
-.form-group { display: flex; flex-direction: column; gap: 0.5rem; }
-input, textarea, select {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid var(--glass-border);
-    padding: 1rem; border-radius: 10px; color: white; outline: none; transition: 0.3s;
+/* Form */
+.form-group { margin-bottom: 1.2rem; }
+label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text-dim); }
+input, textarea {
+    width: 100%; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border);
+    padding: 0.8rem; border-radius: 8px; color: white; transition: 0.3s;
 }
-input:focus, textarea:focus { border-color: var(--primary); background: rgba(255,255,255,0.1); }
+input:focus, textarea:focus { border-color: var(--primary); outline: none; }
 
 .btn {
-    background: var(--primary); color: white; padding: 1rem 2rem;
-    border-radius: 10px; text-decoration: none; font-weight: 600;
-    text-align: center; border: none; cursor: pointer; transition: 0.3s;
+    background: var(--primary); color: white; padding: 0.8rem 1.8rem;
+    border-radius: 8px; text-decoration: none; font-weight: 600;
+    display: inline-block; border: none; cursor: pointer; transition: 0.3s;
 }
-.btn:hover { background: var(--primary-hover); transform: scale(1.02); }
+.btn:hover { background: var(--primary-hover); }
 
-footer { text-align: center; padding: 4rem; border-top: 1px solid var(--glass-border); color: var(--text-dim); }
+footer { margin-top: auto; padding: 3rem; text-align: center; color: var(--text-dim); font-size: 0.9rem; border-top: 1px solid var(--glass-border); }
 
 @media (max-width: 768px) {
     .nav-links { display: none; }
-    h2 { font-size: 1.8rem; }
-}
-/* Adicione no final do seu style.css */
-
-/* Melhora o espaçamento das seções */
-section {
-    padding: 60px 0; /* Espaço uniforme entre blocos */
-}
-
-/* Deixa os textos justificados e bem distribuídos */
-p {
-    text-align: justify;
-    margin-bottom: 1rem;
-}
-
-/* Transição suave nos cards ao passar o mouse */
-.glass-card {
-    transition: all 0.3s ease;
-}
-
-.glass-card:hover {
-    border-color: var(--primary);
-    transform: translateY(-5px);
-}
-
-/* Ajuste para o rodapé ficar fixo no fundo se houver pouco conteúdo */
-footer {
-    margin-top: auto;
-}
-
-/* Estilo para ícones nas especialidades */
-.glass-card i {
-    display: block;
-    margin-bottom: 15px;
 }
