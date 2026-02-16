@@ -4,64 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Saimon Daminelli</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="container nav-content">
-            <div class="logo">SAIMON<span>.DAMINELLI</span></div>
-            <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="contact.html" class="active">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
+   <nav>
+    <div class="container nav-content">
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">SAIMON<span>.DAMINELLI</span></a>
+        <div class="menu-toggle" id="mobile-menu"><i class="bi bi-list"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <main class="container" style="padding-top: 150px;">
+    <main class="container" style="padding-top: 140px;">
         <div class="contact-wrapper">
-            <div class="glass-card contact-info">
-                <h2 style="margin-bottom: 1.5rem;">Vamos conversar?</h2>
-                <p class="text-dim" style="margin-bottom: 2rem;">Estou aberto a novas parcerias, projetos de automação e consultoria em infraestrutura.</p>
+            <div class="glass-card">
+                <h2>Conecte-se</h2>
+                <p class="text-dim">Escolha seu canal preferido para conversarmos:</p>
                 
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://linkedin.com/in/SEU_USER" target="_blank">linkedin.com/in/saimon</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/SEU_USER" target="_blank">github.com/saimon</a>
+                <div style="margin-top:2rem; font-size:1.1rem;">
+                    <a href="https://www.linkedin.com/in/saimondaminelli/" target="_blank" style="color:var(--highlight); text-decoration:none; display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem;">
+                        <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/SaimonFDaminelli" target="_blank" style="color:white; text-decoration:none; display: flex; align-items: center; gap: 10px;">
+                        <i class="bi bi-github" style="font-size: 1.5rem;"></i> GitHub
+                    </a>
                 </div>
             </div>
 
             <div class="glass-card">
-                <form action="https://api.web3forms.com/submit" method="POST">
+                <h2>Mande uma mensagem</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" style="margin-top: 1.5rem;">
                     <input type="hidden" name="access_key" value="97230f37-e1bf-4484-80a1-4d81fe140836">
+
+                    <div class="form-group">
+                        <label>Seu Nome</label>
+                        <input type="text" name="name" required placeholder="Como devo te chamar?">
+                    </div>
                     
                     <div class="form-group">
-                        <label>Nome</label>
-                        <input type="text" name="name" required placeholder="Seu nome">
-                    </div>
-                    <div class="form-group">
                         <label>E-mail</label>
-                        <input type="email" name="email" required placeholder="seu@email.com">
+                        <input type="email" name="email" required placeholder="exemplo@email.com">
                     </div>
+                    
                     <div class="form-group">
                         <label>Mensagem</label>
-                        <textarea name="message" rows="4" required placeholder="Como posso te ajudar?"></textarea>
+                        <textarea name="message" rows="5" required placeholder="Como posso ajudar?"></textarea>
                     </div>
-                    <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+
+                    <button type="submit" class="btn" style="width:100%">Enviar E-mail</button>
                 </form>
             </div>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Saimon Daminelli | Analista de TI.</p>
-    </footer>
+<footer>
+    <div class="container">
+        <p>Saimon Daminelli | Analista de TI</p>
+        <div style="margin-top: 10px;">
+            <a href="https://www.linkedin.com/in/saimondaminelli/" target="_blank" style="color: inherit; margin: 0 10px; font-size: 1.2rem;"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/SaimonFDaminelli" target="_blank" style="color: inherit; margin: 0 10px; font-size: 1.2rem;"><i class="bi bi-github"></i></a>
+        </div>
+    </div>
+</footer>
+
     <script src="script.js"></script>
 </body>
 </html>

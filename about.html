@@ -3,53 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim | Saimon Daminelli</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Sobre | Saimon Daminelli</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="container nav-content">
-            <div class="logo">SAIMON<span>.DAMINELLI</span></div>
-            <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">Sobre</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav>
+    <div class="container nav-content">
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">SAIMON<span>.DAMINELLI</span></a>
+        <div class="menu-toggle" id="mobile-menu"><i class="bi bi-list"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="contact.html">Contato</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <main class="container" style="padding-top: 150px;">
-        <section id="sobre">
-            <h2 class="section-title">Minha Trajetória</h2>
-            <div class="glass-card" style="margin-bottom: 2rem;">
-                <p>Sou um profissional multidisciplinar que acredita que a tecnologia deve servir ao negócio. Minha base vem da <strong>Eletromecânica</strong>, o que me deu uma visão prática de sistemas, evoluindo para o <strong>Bacharelado em TIC</strong> na UFSC.</p>
-                <p style="margin-top: 1rem;">Hoje, foco em orquestrar ecossistemas onde a infraestrutura é robusta, os processos são automatizados e os dados são transformados em inteligência.</p>
+    <main class="container" style="padding-top: 140px;">
+        
+        <section id="resumo-profissional" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Resumo Profissional</h2>
+            <div class="glass-card">
+                <p style="margin-bottom: 1rem;">Atuo de forma técnica e estratégica nas seguintes frentes:</p>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="margin-bottom: 0.8rem;"><i class="bi bi-check2-circle" style="color: var(--primary); margin-right: 10px;"></i><strong>Infraestrutura e Redes:</strong> Configuração, manutenção e segurança de todo o ambiente de rede e servidores.</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="bi bi-check2-circle" style="color: var(--primary); margin-right: 10px;"></i><strong>Automação:</strong> Criação de soluções para automatizar processos repetitivos e otimizar o dia a dia.</li>
+                    <li style="margin-bottom: 0.8rem;"><i class="bi bi-check2-circle" style="color: var(--primary); margin-right: 10px;"></i><strong>BI (Business Intelligence):</strong> Transformação de dados em informações visuais e úteis para a empresa.</li>
+                </ul>
             </div>
+        </section>
 
-            <h2 class="section-title">Formação</h2>
+        <section id="habilidades" style="margin-bottom: 4rem;">
+            <h2 class="section-title">Especialidades Técnicas</h2>
             <div class="grid">
-                <div class="glass-card education-card">
-                    <span class="skill-tag">UFSC</span>
-                    <h3>Bacharelado em TIC</h3>
-                    <p class="text-dim">Tecnologia da Informação e Comunicação</p>
-                    <span class="status-tag">Em andamento</span>
+                <div class="glass-card" style="text-align: center;">
+                    <i class="bi bi-bar-chart-line" style="font-size: 2.5rem; color: var(--primary);"></i>
+                    <h3 style="margin: 1rem 0;">Analytics & BI</h3>
+                    <div class="skill-tag">Power BI</div>
+                    <div class="skill-tag">Tableau</div>
+                    <div class="skill-tag">Looker Studio</div>
+                    <div class="skill-tag">MetaBase</div>
+                    <div class="skill-tag">Python (Pandas)</div>
                 </div>
-                <div class="glass-card education-card">
-                    <span class="skill-tag">IFSC</span>
-                    <h3>Técnico em Eletromecânica</h3>
-                    <p class="text-dim">Manutenção e Automação Industrial</p>
-                    <span class="status-tag">Concluído</span>
+
+                <div class="glass-card" style="text-align: center;">
+                    <i class="bi bi-code-square" style="font-size: 2.5rem; color: var(--primary);"></i>
+                    <h3 style="margin: 1rem 0;">Data Automation</h3>
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">N8N</div>
+                    <div class="skill-tag">Node-RED</div>
+                    <div class="skill-tag">SQL Server</div>
+                </div>
+
+                <div class="glass-card" style="text-align: center;">
+                    <i class="bi bi-cpu" style="font-size: 2.5rem; color: var(--primary);"></i>
+                    <h3 style="margin: 1rem 0;">Infra & Redes</h3>
+                    <div class="skill-tag">pfSense</div>
+                    <div class="skill-tag">Active Directory</div>
+                    <div class="skill-tag">Servidores</div>
+                    <div class="skill-tag">Redes</div>
                 </div>
             </div>
         </section>
+
+        <section id="educacao">
+    <h2 class="section-title">Formação Acadêmica</h2>
+    
+    <div class="timeline-container">
+        <div class="education-block">
+            <div class="timeline-marker">
+                <div class="dot"></div>
+                <div class="line"></div>
+            </div>
+            <div class="glass-card education-content">
+                <div class="edu-header">
+                    <span class="status-badge active">Em andamento</span>
+                    <span class="edu-date">2023 — Presente</span>
+                </div>
+                <h3>Bacharelado em Tecnologias da Informação e Comunicação</h3>
+                <p class="institution">UFSC - Universidade Federal de Santa Catarina</p>
+                <p class="edu-description">Foco em infraestrutura de rede, desenvolvimento de sistemas e governança de TI.</p>
+            </div>
+        </div>
+
+        <div class="education-block">
+            <div class="timeline-marker">
+                <div class="dot"></div>
+            </div>
+            <div class="glass-card education-content">
+                <div class="edu-header">
+                    <span class="status-badge completed">Concluído</span>
+                    <span class="edu-date">2019 — 2021</span>
+                </div>
+                <h3>Técnico em Eletromecânica</h3>
+                <p class="institution">IFSC - Instituto Federal de Santa Catarina</p>
+                <p class="edu-description">Base em automação industrial, comandos elétricos e manutenção de sistemas integrados.</p>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Saimon Daminelli | Analista de TI.</p>
-    </footer>
+<footer>
+    <div class="container">
+        <p>Saimon Daminelli | Analista de TI</p>
+        <div style="margin-top: 10px;">
+            <a href="https://www.linkedin.com/in/saimondaminelli/" target="_blank" style="color: inherit; margin: 0 10px; font-size: 1.2rem;"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/SaimonFDaminelli" target="_blank" style="color: inherit; margin: 0 10px; font-size: 1.2rem;"><i class="bi bi-github"></i></a>
+        </div>
+    </div>
+</footer>
+
     <script src="script.js"></script>
 </body>
 </html>
