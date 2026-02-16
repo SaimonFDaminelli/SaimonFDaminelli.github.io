@@ -12,52 +12,68 @@
     <nav>
         <div class="container nav-content">
             <div class="logo">SAIMON<span>.DAMINELLI</span></div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">Sobre</a></li>
                 <li><a href="contact.html">Contato</a></li>
+                <li class="social-icons-nav">
+                    <a href="https://linkedin.com/in/SEU_USER" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/SEU_USER" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
             </ul>
         </div>
     </nav>
 
-    <header style="padding: 180px 0 100px;">
+    <header class="hero">
         <div class="container">
-            <span class="skill-tag" style="color: var(--primary); border-color: var(--primary);">Infrastrutura, Automação & Inteligencia de Dados</span>
-            <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; line-height: 1.1; margin: 1rem 0;">Soluções tecnológicas <br>que impulsionam <span style="color: var(--primary);">resultados.</span></h1>
-            <p style="font-size: 1.2rem; color: var(--text-dim); max-width: 650px; margin-bottom: 2rem;">
-    Especialista em orquestrar soluções de TI que geram resultados. Transformando tecnologia em vantagens competitivas.
-</p>
+            <span class="skill-tag-hero">Infraestrutura • Automação • Inteligência de Dados</span>
+            <h1>Soluções tecnológicas que impulsionam <span class="highlight">resultados.</span></h1>
+            <p class="hero-subtitle">
+                Especialista em orquestrar soluções de TI que geram resultados. Transformando tecnologia em vantagens competitivas.
+            </p>
+            <div class="hero-btns">
                 <a href="contact.html" class="btn">Entre em Contato</a>
-                <a href="#especialidades" class="btn" style="background: transparent; border: 1px solid var(--glass-border);">Explorar Stacks</a>
+                <a href="#especialidades" class="btn btn-outline">Explorar Stacks</a>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section id="especialidades" class="visible">
-            <h2>Core Business</h2>
+        <section id="especialidades">
+            <h2 class="section-title">Core Business</h2>
             <div class="grid">
                 <div class="glass-card">
-                    <div class="icon-box"><i class="fas fa-shield-network"></i></div>
+                    <div class="icon-box"><i class="fas fa-shield-halved"></i></div>
                     <h3>Infraestrutura & Segurança</h3>
-                    <p>Gestão de firewalls <strong>pfSense</strong>, redes escaláveis e ambientes críticos de servidor.</p>
+                    <p>Gestão de firewalls <strong>pfSense</strong>, redes escaláveis e ambientes críticos de servidores com foco em alta disponibilidade.</p>
                 </div>
                 <div class="glass-card">
                     <div class="icon-box"><i class="fas fa-microchip"></i></div>
                     <h3>Automação Inteligente</h3>
-                    <p>Integrações via <strong>n8n</strong>, Python e fluxos de trabalho potencializados por IA.</p>
+                    <p>Otimização de fluxos via <strong>n8n</strong>, scripts em Python e integrações potencializadas por IA para redução de tarefas manuais.</p>
                 </div>
                 <div class="glass-card">
-                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                    <div class="icon-box"><i class="fas fa-chart-pie"></i></div>
                     <h3>BI & Insights</h3>
-                    <p>Dashboards dinâmicos que traduzem dados de infraestrutura em visão estratégica.</p>
+                    <p>Dashboards dinâmicos em <strong>Power BI</strong> e Metabase que traduzem dados técnicos em visão estratégica de negócio.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Saimon Daminelli | Analista de TI.</p>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Saimon Daminelli | Analista de TI.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

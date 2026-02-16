@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mim | Saimon Daminelli</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
     <nav>
         <div class="container nav-content">
             <div class="logo">SAIMON<span>.DAMINELLI</span></div>
+            <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">Sobre</a></li>
@@ -20,65 +21,27 @@
         </div>
     </nav>
 
-    <main class="container" style="padding-top: 120px;">
-        <section id="resumo-profissional">
-        <h2>Resumo Profissional</h2>
-        <p>Atuo de forma técnica e estratégica nas seguintes frentes:</p>
-        
-        <ul>
-            <li><strong>Infraestrutura e Redes:</strong> Configuração, manutenção e segurança de todo o ambiente de rede e servidores.</li>
-            <li><strong>Automação:</strong> Criação de soluções para automatizar processos repetitivos e otimizar o dia a dia.</li>
-            <li><strong>BI (Business Intelligence):</strong> Transformação de dados em informações visuais e úteis para a empresa.</li>
-        </ul>
-        </section>
-        <section id="habilidades">
-            <h2 style="margin-bottom: 3rem;">Especialidades Técnicas</h2>
-            <div class="grid">
-                <div class="glass-card" style="text-align: center;">
-                    <i class="bi bi-bar-chart-line" style="font-size: 2.5rem; color: var(--primary);"></i>
-                    <h3 style="margin: 1rem 0;">Analytics & BI</h3>
-                    <div class="skill-tag">Power BI</div>
-                    <div class="skill-tag">MetaBase</div>
-                    <div class="skill-tag">Python (Pandas)</div>
-                </div>
-
-                <div class="glass-card" style="text-align: center;">
-                    <i class="bi bi-code-square" style="font-size: 2.5rem; color: var(--primary);"></i>
-                    <h3 style="margin: 1rem 0;">Data Automation</h3>
-                    <div class="skill-tag">Python</div>
-                    <div class="skill-tag">N8N</div>
-                    <div class="skill-tag">SQL Server</div>
-                </div>
-
-                <div class="glass-card" style="text-align: center;">
-                    <i class="bi bi-cpu" style="font-size: 2.5rem; color: var(--primary);"></i>
-                    <h3 style="margin: 1rem 0;">Infra & Redes</h3>
-                    <div class="skill-tag">Active Directory</div>
-                    <div class="skill-tag">Servidores</div>
-                    <div class="skill-tag">Redes</div>
-                    <div class="skill-tag">pfSense</div>
-                </div>
+    <main class="container" style="padding-top: 150px;">
+        <section id="sobre">
+            <h2 class="section-title">Minha Trajetória</h2>
+            <div class="glass-card" style="margin-bottom: 2rem;">
+                <p>Sou um profissional multidisciplinar que acredita que a tecnologia deve servir ao negócio. Minha base vem da <strong>Eletromecânica</strong>, o que me deu uma visão prática de sistemas, evoluindo para o <strong>Bacharelado em TIC</strong> na UFSC.</p>
+                <p style="margin-top: 1rem;">Hoje, foco em orquestrar ecossistemas onde a infraestrutura é robusta, os processos são automatizados e os dados são transformados em inteligência.</p>
             </div>
-        </section>
 
-        <section id="educacao">
-            <div class="glass-card">
-                <h2 style="text-align: left; border-left: 5px solid var(--primary); padding-left: 20px;">Formação Acadêmica</h2>
-                <div style="margin-top: 2rem;">
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 1.5rem; border-bottom: 1px solid var(--glass-border); padding-bottom: 1rem;">
-                        <div>
-                            <strong>Bacharelado em TIC</strong><br>
-                            <span style="color: var(--text-dim);">UFSC - Universidade Federal de Santa Catarina</span>
-                        </div>
-                        <span class="skill-tag">Em andamento</span>
-                    </div>
-                    <div style="display: flex; justify-content: space-between;">
-                        <div>
-                            <strong>Técnico em Eletromecânica</strong><br>
-                            <span style="color: var(--text-dim);">IFSC - Intituto Federal de Santa Catarina</span>
-                        </div>
-                        <span class="skill-tag">Concluído</span>
-                    </div>
+            <h2 class="section-title">Formação</h2>
+            <div class="grid">
+                <div class="glass-card education-card">
+                    <span class="skill-tag">UFSC</span>
+                    <h3>Bacharelado em TIC</h3>
+                    <p class="text-dim">Tecnologia da Informação e Comunicação</p>
+                    <span class="status-tag">Em andamento</span>
+                </div>
+                <div class="glass-card education-card">
+                    <span class="skill-tag">IFSC</span>
+                    <h3>Técnico em Eletromecânica</h3>
+                    <p class="text-dim">Manutenção e Automação Industrial</p>
+                    <span class="status-tag">Concluído</span>
                 </div>
             </div>
         </section>
@@ -87,7 +50,6 @@
     <footer>
         <p>&copy; 2026 Saimon Daminelli | Analista de TI.</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

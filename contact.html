@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | Saimon Daminelli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,6 +12,7 @@
     <nav>
         <div class="container nav-content">
             <div class="logo">SAIMON<span>.DAMINELLI</span></div>
+            <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">Sobre</a></li>
@@ -20,28 +22,46 @@
     </nav>
 
     <main class="container" style="padding-top: 150px;">
-        <div class="glass-card" style="max-width: 600px; margin: 0 auto;">
-            <h2>Mande uma mensagem</h2>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="97230f37-e1bf-4484-80a1-4d81fe140836">
+        <div class="contact-wrapper">
+            <div class="glass-card contact-info">
+                <h2 style="margin-bottom: 1.5rem;">Vamos conversar?</h2>
+                <p class="text-dim" style="margin-bottom: 2rem;">Estou aberto a novas parcerias, projetos de automação e consultoria em infraestrutura.</p>
                 
-                <div class="form-group">
-                    <label>Seu Nome</label>
-                    <input type="text" name="name" required placeholder="Como devo te chamar?">
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/SEU_USER" target="_blank">linkedin.com/in/saimon</a>
                 </div>
-                <div class="form-group">
-                    <label>E-mail</label>
-                    <input type="email" name="email" required placeholder="exemplo@email.com">
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/SEU_USER" target="_blank">github.com/saimon</a>
                 </div>
-                <div class="form-group">
-                    <label>Mensagem</label>
-                    <textarea name="message" rows="5" required placeholder="Como posso ajudar?"></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar E-mail</button>
-            </form>
+            </div>
+
+            <div class="glass-card">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="97230f37-e1bf-4484-80a1-4d81fe140836">
+                    
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" name="name" required placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail</label>
+                        <input type="email" name="email" required placeholder="seu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea name="message" rows="4" required placeholder="Como posso te ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+                </form>
+            </div>
         </div>
     </main>
 
+    <footer>
+        <p>&copy; 2026 Saimon Daminelli | Analista de TI.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
